@@ -7,7 +7,6 @@ from django.shortcuts import render
 # Toda consulta de rota é chamado de um HTTP REQUEST, toda vez que fazemos uma
 # consulta, a rota irá receber um request, como esse exemplo abaixo.
 def home(request):
-    # return HttpResponse('HOME')
-    return render(request, "recipes/home.html", context={
-        'name': 'Tutu'
+    return render(request, "recipes/pages/home.html", context={
+        "name": "Tutu"
     })
